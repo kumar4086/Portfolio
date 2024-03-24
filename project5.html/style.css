@@ -1,0 +1,274 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    background-color: black;
+    font-size: 15px;
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+}
+nav li{
+    display:inline-block;
+    margin:0 8px;
+}
+nav li:hover{
+      border-bottom: 2px solid white;
+}
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.logo a{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-right: 900px;
+}
+.menu-line{
+    height:3px;
+    background-color: white;
+    width:20px;
+    margin-bottom: 3px;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.front{
+    border:0px solid black;
+    width:95%;
+    height:700px;
+    display: flex;
+}
+.front .left-side{
+    border:0px solid black;
+    width:50%;
+    height:698px;          
+
+}
+.front .left-side h1{
+    position: relative;
+    top:210px;
+    left:70px;
+}
+.front .left-side p{
+    text-align: justify;
+    position: relative;
+    top:200px;
+    font-size: 20px;
+    left:70px;
+}
+.front .left-side .butt{
+    display: flex;
+}
+.front .left-side .butt p{
+    border: 0px solid black;
+    width:120px;
+    height: 40px;
+    text-align: center;
+    background-color: orangered;
+    color: whitesmoke;
+}
+.front .left-side .butt1 p{
+    border: 0px solid black;
+    color: whitesmoke;
+    width:120px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    left:210px;
+    top:120px;
+    background-color: yellow;
+}
+.front .left-side .butt p:hover{
+    background-color:whitesmoke;
+    color: orangered;
+
+}
+.front .left-side .butt1 p:hover{
+    background-color:whitesmoke;
+    color: yellow;
+}
+.front .right-side{
+    border:0px solid black;
+    width:50%;
+    height:698px;          
+
+}
+.front .right-side img{
+    position: relative;
+    top:180px;
+    left:30px;
+}
+.second{
+        border:0px solid black;
+        width:95%;
+        height:700px;
+    }
+.second h1{
+    position: relative;
+    left:70px;      
+}
+.second p{
+    position: relative;
+    left:70px;
+    font-size: 20px;
+}
+.second .box{
+    border:0px solid;
+    width:95%;
+    height:900px;
+    margin-left:70px;
+}
+.second .box .innerbox{
+    border:0px solid;
+    width:100%;
+    height:450px;
+    display: flex;
+}
+.second .box .innerbox .box1{
+    border:0px solid;
+    width:250px;
+    height:300px;
+}
+.second .box .innerbox .box1 img{
+    width:246px;
+    height:220px;
+}
+.second .box .innerbox .box2{
+    border:0px solid;
+    width:250px;
+    height:300px;
+}
+.second .box .innerbox .box2 img{
+    width:246px;
+    height:220px;
+}
+.second .box .innerbox .box3{
+    border:0px solid;
+    width:250px;
+    height:300px;
+}
+.second .box .innerbox .box3 img{
+    width:246px;
+    height:220px;
+}
+.second .box .box1,.box2,.box3{
+    margin:100px 100px 100px 100px;
+}
+.second .box .inner2box{
+    border:0px solid;
+    width:100%;
+    height:446px;
+    display: flex;
+}
+.second .box .inner2box .sbox1{
+    border:0px solid;
+    width:250px;
+    height:300px;   
+
+}
+.second .box .inner2box .sbox1 img{
+    width:246px;
+    height:220px;
+
+}
+.second .box .inner2box .sbox2{
+    border:0px solid;
+    width:250px;
+    height:300px;   
+
+}
+.second .box .inner2box .sbox2 img{
+    width:246px;
+    height:220px;
+
+}
+.second .box .inner2box .sbox3{
+    border:0px solid;
+    width:250px;
+    height:300px;   
+
+}
+.second .box .inner2box .sbox3 img{
+    width:246px;
+    height:220px;
+
+}
+
+.second .box .sbox1,.sbox2,.sbox3{
+    margin:100px 100px 100px 100px;
+}
+
+@media all and (max-width:640px){
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding: 10px 0;
+    }
+    ul{
+        text-align: center;
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 10px 0px 0px 30px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right:30px;
+        top:25px;
+    }
+    .front{
+        border:0px solid;
+        width:90%;
+        height:650px;
+        top:50px;
+    }
+    .front .left-side p{
+        text-align: justify;
+    }
+    .front .right-side img{
+        width:246px;
+        height:220px;
+        display: block;
+        position: relative;
+        left:100px;
+    }
+    .front .left-side .butt{
+        position: relative;
+        bottom: 20px;
+    }
+    .front .left-side .butt1{
+        position: relative;
+        bottom: 20px;
+    }
+    .second .box .innerbox{
+        border:0px solid;
+        width:500px;
+        height:50em;
+    }
+    .second .box .innerbox{
+        display: block;
+    } 
+    .second .box .inner2box .sbox1 img{
+        position: relative;
+        top:20px;
+
+    }
+    .second .box .inner2box{
+        display:block;
+    }
+
+    
+}
+
